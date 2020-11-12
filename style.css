@@ -117,10 +117,55 @@ section .container .user .formBox form .signup a {
   color: #677eff;
 }
 
+section .container .singUpBox {
+  pointer-events: none;
+}
+
+section .container.active .singUpBox {
+  pointer-events: initial;
+}
+
 section .container .singUpBox .formBox {
   left: 100%;
+}
+
+section .container.active .singUpBox .formBox {
+  left: 0%;
 }
 
 section .container .singUpBox .imgBox {
   left: -100%;
 }
+
+section .container.active .singUpBox .imgBox {
+  left: 0%;
+}
+
+
+
+section .container .singInBox .formBox {
+  left: 0%;
+}
+
+section .container.active .singInBox .formBox {
+  left: 100%;
+}
+
+section .container .singInBox .imgBox {
+  left: 0%;
+}
+
+section .container.active .singInBox .imgBox {
+  left: -100%;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    max-width: 400px;
+  }
+  section .container .imgBox {
+    display: none;
+  }
+  section .container .user .formBox {
+    width: 100%;
+  }
